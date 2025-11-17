@@ -1,100 +1,95 @@
 EventOpportunity – Full-Stack Event Management System
 
-EventOpportunity is a full-stack web application designed to manage and display events with secure user registration, JWT-based authentication, and automated email notifications powered by Nodemailer.
+EventOpportunity is a full-stack web application used to manage and display events. It includes user registration, login authentication, event creation features, and automated email notifications using Nodemailer.
 
-📥 Download Resources
+Download Links
 
-Project ZIP (36 MB)
+Project ZIP (36 MB):
 https://drive.google.com/file/d/1jJv1RmWdBfTT911LwoEKQfCR-EfyTqB3/view
 
-Documentation – Black Book PDF
+Documentation (Black Book PDF):
 https://drive.google.com/file/d/1Gm0tCN8sl5Yamt0Vgulx6oije4JFHZfv/view
 
-🚀 Tech Stack
+Technologies Used
 
-Frontend:
+Frontend: HTML, CSS, JavaScript
+Backend: Node.js, Express.js
+Database: MongoDB
+Email Service: Nodemailer
+Authentication: JSON Web Tokens (JWT)
 
-HTML
+Project Structure
 
-CSS
-
-JavaScript
-
-Backend:
-
-Node.js
-
-Express.js
-
-Database:
-
-MongoDB
-
-Email Service:
-
-Nodemailer
-
-Authentication:
-
-JSON Web Tokens (JWT)
-
-📂 Project Structure
+Below is the folder structure in a GitHub-friendly format:
 EventOpportunity/
-├── server.js               # Main server entry
-├── routes/                 # API routes
-├── models/                 # MongoDB models
-├── controllers/            # Business logic
-├── config/                 # App configuration
-├── public/                 # Frontend files
-│   ├── index.html
-│   ├── userRegister.html
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── package.json            # Dependencies list
-├── .env.example            # Environment variable template
-└── README.md               # Project documentation
+│
+├── server.js
+├── package.json
+├── .env.example
+│
+├── routes/
+│   └── (API route files)
+│
+├── models/
+│   └── (MongoDB schema files)
+│
+├── controllers/
+│   └── (Business logic)
+│
+├── config/
+│   └── (Configuration files)
+│
+└── public/
+    ├── index.html
+    ├── userRegister.html
+    ├── css/
+    ├── js/
+    └── images/
+Key Features
 
-⭐ Core Features
+Secure user registration and login
 
-🔐 Secure User Registration & Login (JWT-based)
+JWT-based authentication
 
-📅 Event Management (Create, update, delete)
+Create, update, delete events
 
-📧 Automatic Email Notifications via Nodemailer
+Automatic email notifications
 
-🗄 MongoDB Database Storage
+MongoDB database storage
 
-📱 Responsive UI for all devices
+Responsive frontend
 
-🔗 RESTful API Architecture
+RESTful API
 
-🚀 Easy Setup & Deployment
+Easy setup and deployment
 
-🛠 Installation & Setup
-1. Install Prerequisites
+Installation and Setup Guide
+1. Install Required Software
 
-Ensure the following are installed:
+Install the following before starting:
 
-Node.js (v14+)
+Node.js (version 14 or above)
 
 MongoDB
 
-Gmail account (for emails)
+Gmail account for sending emails
 
-2. Download Project
+2. Download and Extract the Project
 
 Download the ZIP from the link above
 
-Extract to any folder
+Extract it to your system
 
 3. Install Dependencies
+
+Open the terminal inside the project folder:
+
 cd EventOpportunity
 npm install
 
-4. Configure Environment Variables
+4. Create Environment Variables
 
-Create a .env file in the root directory:
+Create a new file named .env in the project root and add:
 
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/eventopportunity
@@ -104,104 +99,99 @@ JWT_SECRET=your-secret-key-here
 
 5. Generate Gmail App Password
 
-Google Account → Security
+Open Google Account
 
-Enable 2-Step Verification
+Go to "Security"
 
-Go to App Passwords
+Enable "2-Step Verification"
 
-Select Mail → Generate
+Open "App Passwords"
 
-Copy the generated 16-character password
+Select "Mail" and generate a password
 
-Paste it into .env as EMAIL_PASS
+Copy the 16-digit password into .env as EMAIL_PASS
 
 6. Start MongoDB
+
+Open a new terminal and run:
+
 mongod
 
 
 Keep this terminal open.
 
 7. Start the Application
+
+Run:
+
 npm start
 
-8. Open in Browser
+8. Access the Website
+
+Open your browser:
+
 http://localhost:3000
+Troubleshooting
 
-📡 API Endpoints
-Method	Endpoint	Description
-POST	/api/register	Register new user
-POST	/api/login	User login
-GET	/api/events	Get all events
-POST	/api/events	Create new event
-PUT	/api/events/:id	Update existing event
-DELETE	/api/events/:id	Delete event
-🔧 Troubleshooting Guide
-Email Not Sending?
+Email Problems:
 
-Check Gmail App Password
+Confirm Gmail App Password
 
-Ensure 2-Step Verification is ON
+Ensure 2-Step Verification is enabled
 
-Use App Password, not normal Gmail password
+Use App Password (not normal password)
 
-MongoDB Not Connecting?
+MongoDB Problems:
 
-Confirm mongod is running
+Check if MongoDB is running
 
-Verify MONGODB_URI
+Confirm the MONGODB_URI in .env
 
-Check MongoDB installation
+Port Already in Use:
 
-Port Already in Use?
+Change PORT to 3001 or 3002 in .env
 
-Change PORT in .env (e.g., 3001)
+npm install Errors:
 
-Close other running Node processes
-
-npm Install Errors?
-
-Delete node_modules & package-lock.json
+Delete node_modules and package-lock.json
 
 Run npm install again
 
-📘 Documentation
+Documentation
 
-The complete Black Book PDF includes:
+The Black Book PDF contains:
 
-Detailed setup guide
+Complete setup
 
-Explanation of backend code
+Code explanation
 
 API documentation
 
 Database schema
 
-Deployment instructions
+Deployment guide
 
-Error handling & fixes
+Troubleshooting tips
 
-📦 Project Details
+Project Information
 
-Name: EventOpportunity
-
+Project Name: EventOpportunity
 Version: 1.0.0
-
-Size: 36 MB
-
+Total Size: 36 MB
 License: MIT
 
-🤝 Support
+Support
 
-For help or debugging:
+Refer to the PDF documentation for detailed guidance.
+Check console logs for errors.
+Review API endpoints and backend code for debugging.
 
-Refer to console logs
+This is the cleanest and most professional GitHub-ready version with no emojis, no extra styling, and proper formatting.
 
-Review API endpoints
+If you want, I can also create:
 
-Read the Black Book documentation
+A shorter README
 
-🎉 You're Ready to Go!
+A version with screenshots
 
-Your EventOpportunity website is fully set up and ready to run.
-Enjoy building and expanding your event management system!
+A version with GitHub badges
